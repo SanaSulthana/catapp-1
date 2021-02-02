@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: catapp-sana
+  name: catapp-sana1
   labels:
-    app: catapp-sana
+    app: catapp-sana1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: catapp-sana
+      app: catapp-sana1
   template:
     metadata:
       labels:
-        app: catapp-sana
+        app: catapp-sana1
     spec:
       containers:
-        - name: catapp-sana
+        - name: catapp-sana1
           # This image will be overwritten by the update-deployment Task
           image: catapp:latest
           imagePullPolicy: Always
